@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-image: url(sad.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .smily{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border-radius: 50%;
+            border: 7px solid black;
+        }
+        .eyes:before, .eyes:after{
+            content: "";
+            position: absolute;
+            top: 30%;
+            width: 25px;
+            height: 25px;
+            background: black;
+            border-radius:50% ;
+            transition: 1s;
+
+        }
+        .eyes:before{
+            left: 25%;
+        }
+        .eyes:after{
+            right: 25%;
+        }
+        .smily:hover .eyes:before, .smily:hover .eyes:after{
+            width: 30px;
+            height: 45px;
+        }
+        .lips{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 6px solid transparent;
+            border-top: 10px solid black;
+            border-radius :50%; ;
+            top: 65%;
+            left: 23%;
+            transition: 1s;
+           
+            border-radius:0%;
+            transform: translateX(-50%,);
+            
+        }
+        .smily:hover .lips{
+            width: 100px;
+            border-radius: 100%;
+            
+        }
+        .smily:hover {
+            background-color: blueviolet;
+            
+        }
+        
+        h1{
+            text-align: center;
+            font-size: 80px;
+            color: white;
+        }
+        h2{
+            text-align: center;
+            font-size: 70px;
+        color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>I'm Sorry</h1>
+    <div class="smily">
+            <div class="eyes"></div>
+                <div class="lips"></div>
+    </div><br><br><br><br><br><br><br><br><br><br>
+    <h2>Touch Me</h2>
+    
+</body>
+
+</div>
+</html>
